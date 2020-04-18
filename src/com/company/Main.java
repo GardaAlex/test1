@@ -77,45 +77,8 @@ public class Main {
         // getting user input with scanner
 
         //create new scanner object
-        Scanner userInput = new Scanner (System.in);
-        int end = 0;
-        //find out what user wants to do with address book
-        while (end != -1)
-        {
-            System.out.println("  ");
-            System.out.println("  ");
-            System.out.println("----------------------------");
-            System.out.println("What would you like to do with your address book? ...");
-            System.out.println("----------------------------");
-            System.out.println("Add new         [Enter 1]");
-            System.out.println("Delete existing [Enter 2]");
-            System.out.println("Edit existing   [Enter 3]");
-            System.out.println("Search for      [Enter 4]");
-            System.out.println("EXIT            [Enter -1]");
-            if (userInput.hasNext() && (userInput.nextInt() == 1))
-            {
-                AddressBookProcessor.addContact();
-            }
-            else if (userInput.hasNext() && userInput.nextInt() == 2)
-            {
-                AddressBookProcessor.deleteContact();
-            }
-            else if (userInput.hasNext() && userInput.nextInt() == 3)
-            {
-                AddressBookProcessor.editContact();
-            }
-            else if (userInput.hasNext() && userInput.nextInt() == 4)
-            {
-                AddressBookProcessor.findContact();
-            }
-            else if (userInput.nextInt() != 1 || userInput.nextInt() != 2
-                    || userInput.nextInt() != 3 || userInput.nextInt() != -1)
-            {
-                System.out.println("Please enter a valid input");
-                end = -1;
-            }
-        }
 
-    }
+
+
     }
 }
